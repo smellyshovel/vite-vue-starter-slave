@@ -1,0 +1,46 @@
+{
+  "name": "vite-vue-starter-slave",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/vite-vue-starter-slave.mjs",
+  "types": "./dist/vite-vue-starter-slave.d.ts",
+  "scripts": {
+    "env:prep": "npm run build:lib && npm link && npm link vite-vue-starter-slave",
+    "dev:lib": "vue-tsc --project tsconfig.lib.json && vite build --watch --mode development --config vite.lib.config.ts",
+    "dev:demo": "vue-tsc --project tsconfig.demo.json && vite --config vite.demo.config.ts",
+    "build:lib": "vue-tsc --project tsconfig.lib.json && vite build --config vite.lib.config.ts",
+    "build:demo": "vue-tsc --project tsconfig.demo.json && vite build --config vite.demo.config.ts",
+    "build": "npm run lint && npm run build:lib && npm run build:demo",
+    "format": "prettier --write .",
+    "prelint": "npm run format",
+    "lint": "eslint --fix \"./src/**/*.{ts,js,cjs,vue,html}\""
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "vite-vue-starter-slave": "file:./"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.19.4",
+    "@types/node": "^18.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/compiler-sfc": "^3.2.41",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^8.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue": "^3.0.0",
+    "vue-tsc": "^0.40.4"
+  }
+}

@@ -1,0 +1,12 @@
+// This config is used by the lib
+
+{
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.common.json" }],
+  "compilerOptions": {
+    // redefine the "common"'s behavior
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  }
+}

@@ -1,0 +1,10 @@
+// This config is used by the demo
+
+{
+  "include": ["demo/**/*.ts", "demo/**/*.d.ts", "demo/**/*.vue"],
+  "references": [{ "path": "./tsconfig.common.json" }],
+  "compilerOptions": {
+    // no need in the demo to emit its type declaration
+    "noEmit": true
+  }
+}

@@ -1,0 +1,20 @@
+// This config is referenced from both the lib- and the demo-specific configs
+
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  }
+}

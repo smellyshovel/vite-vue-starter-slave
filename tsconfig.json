@@ -1,0 +1,15 @@
+// The same "common" config, but under the standard "tsconfig.json" name for proper IDEs support
+
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "demo/**/*.ts",
+    "demo/**/*.d.ts",
+    "demo/**/*.vue",
+    "vite.lib.config.ts",
+    "vite.demo.config.ts"
+  ],
+  "references": [{ "path": "./tsconfig.common.json" }]
+}
