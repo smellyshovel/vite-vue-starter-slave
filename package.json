@@ -5,7 +5,7 @@
     "dist"
   ],
   "module": "./dist/vite-vue-starter-slave.mjs",
-  "types": "./dist/vite-vue-starter-slave.d.ts",
+  "types": "./dist/main.d.ts",
   "scripts": {
     "env:prep": "npm run build:lib && npm link && npm link vite-vue-starter-slave",
     "dev:lib": "vue-tsc --project tsconfig.lib.json && vite build --watch --mode development --config vite.lib.config.ts",

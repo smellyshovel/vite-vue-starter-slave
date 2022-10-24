@@ -18,7 +18,7 @@ export default ({ mode }) => {
       emptyOutDir: false, // can't empty because of dev:lib errors in master
 
       lib: {
-        entry: resolve(__dirname, "src/vite-vue-starter-slave.ts"),
+        entry: resolve(__dirname, "src/main.ts"),
         formats: ["es", "cjs"],
       },
 
