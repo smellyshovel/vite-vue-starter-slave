@@ -1,1 +1,0 @@
-{"version":3,"file":"vite-vue-starter-slave.js","sources":["../src/utils.ts"],"sourcesContent":["/**\n * A function that sums up two numbers and returns the result.\n *\n * @param a\n * @param b\n */\nexport function sum(a: number, b: number) {\n  return a + b;\n}\n"],"names":["sum","a","b"],"mappings":"yeAMgB,SAAAA,EAAIC,EAAWC,EAAW,CACxC,OAAOD,EAAIC,CACb"}
