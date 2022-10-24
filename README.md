@@ -21,7 +21,7 @@ This is the **slave** part of the setup.
 
 Imagine you have an application called Todo App. The application has a dependency - a shared component and general-purpose (util) library that's also developed by you (or your team) and is also intended to be used not only in the Todo App, but in some other applications either. Let's call the library Todo UI.
 
-In such a case it makes the most sense to develop the library as a standalone application and share it using NPM (either globally, or using a private registry).
+In such a case it makes the most sense to develop the library as a standalone application and share it using the NPM (either globally, or even within a private registry).
 
 Thus, you can later include the library in any other project where it makes sense to use it.
 
@@ -57,4 +57,4 @@ In order to get the lib tested, you need to make use of the library in the demo 
 
 Continue developing and testing the library.
 
-When done, refer to the [master-library](https://github.com/smellyshovel/vite-vue-starter-slave)'s README.
+When done, release the `/dist` folder with `npm run build` command and refer to the [master-library](https://github.com/smellyshovel/vite-vue-starter-slave)'s README.
