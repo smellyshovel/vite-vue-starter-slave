@@ -12,6 +12,7 @@ module.exports = {
     "@vue/typescript/recommended",
     "@vue/prettier",
     "@vue/eslint-config-prettier",
+    "plugin:json/recommended",
   ],
   parserOptions: {
     ecmaVersion: 2021,

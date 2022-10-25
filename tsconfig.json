@@ -1,6 +1,20 @@
-// The same "common" config, but under the standard "tsconfig.json" name for proper IDEs support
-
 {
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
@@ -10,6 +24,5 @@
     "demo/**/*.vue",
     "vite.lib.config.ts",
     "vite.demo.config.ts"
-  ],
-  "references": [{ "path": "./tsconfig.common.json" }]
+  ]
 }

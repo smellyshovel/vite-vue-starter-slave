@@ -1,10 +1,20 @@
-// This config is used by the demo
-
 {
-  "include": ["demo/**/*.ts", "demo/**/*.d.ts", "demo/**/*.vue"],
-  "references": [{ "path": "./tsconfig.common.json" }],
   "compilerOptions": {
-    // no need in the demo to emit its type declaration
-    "noEmit": true
-  }
+    "noEmit": true,
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
+  "include": ["demo/**/*.ts", "demo/**/*.d.ts", "demo/**/*.vue"]
 }

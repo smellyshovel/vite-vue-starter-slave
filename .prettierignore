@@ -1,4 +1,4 @@
-# Ignore everything recursively...
+# Ignore everything recursively
 *
 
 # But not the .{ts,js,cjs,html,css,vue,json,md} files

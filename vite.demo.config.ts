@@ -6,14 +6,13 @@ import { visualizer } from "rollup-plugin-visualizer";
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
-export default ({ mode }) => {
+export default ({ mode }: { mode: string }) => {
   // make all the Vite's env. variables available in this config file
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
-    plugins: [vue(), visualizer()], 
+    plugins: [vue(), visualizer()],
 
-    // all the demo's related code is located inside the /demo folder
     root: resolve(__dirname, "demo"),
 
     resolve: {
@@ -22,7 +21,7 @@ export default ({ mode }) => {
     },
 
     optimizeDeps: {
-      // to be able to self-reference the lib in the demo
+      // TODO: use the slave's actual name
       exclude: ["vite-vue-starter-slave"],
     },
 
@@ -33,7 +32,7 @@ export default ({ mode }) => {
       },
 
       proxy: {
-        // dev server proxy rules
+        // demo server's proxy rules
       },
     },
   });

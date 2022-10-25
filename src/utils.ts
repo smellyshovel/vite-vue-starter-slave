@@ -1,5 +1,5 @@
 /**
- * A function that sums up two numbers and returns the result.
+ * Sums up two numbers and returns the result.
  *
  * @param a
  * @param b

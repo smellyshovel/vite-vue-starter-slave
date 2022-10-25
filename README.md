@@ -1,10 +1,12 @@
 # Vite Vue Starter **Slave** template
 
+[**A word on terminology.**](<https://en.wikipedia.org/wiki/Master/slave_(technology)>)
+
 ## Features
 
 - Standalone mode support
 - A master-app built-in support
-- Pre-configured environment (<s>husky</s> WIP)
+- Pre-configured environment (Vite, TypeScript, <s>Husky</s> WIP, ESLint, Prettier, <s>Storybook</s> WIP)
 - Script for generating docs using TypeDoc _(in-progress)_
 - Built-in and pre-configured demo-app
 - Built-in and pre-configured Storybook _(in-progress)_
@@ -19,7 +21,9 @@ This is the **slave** part of the setup.
 
 ## Usage
 
-**Read the master repo's [Rationale](https://github.com/smellyshovel/vite-vue-starter-master#rationale) first**. The Todo UI example from there is referenced below.
+**Read the master [Rationale](https://github.com/smellyshovel/vite-vue-starter-master#rationale) first**. The Todo UI example from there is referenced below.
+
+**If this slave-lib implements the sub-slaving pattern, go to the next nested slave.**
 
 1. Clone the repo
 2. Rename the folder to "todo_ui"
