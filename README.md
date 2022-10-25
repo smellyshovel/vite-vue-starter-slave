@@ -6,10 +6,13 @@
 
 - Standalone mode support
 - A master-app built-in support
-- Pre-configured environment (Vite, TypeScript, <s>Husky</s> WIP, ESLint, Prettier, <s>Storybook</s> WIP)
-- Script for generating docs using TypeDoc _(in-progress)_
+- Pre-configured environment
+  - Vite
+  - TypeScript
+  - Husky + lint-staged
+  - ESLint
+  - Prettier
 - Built-in and pre-configured demo-app
-- Built-in and pre-configured Storybook _(in-progress)_
 
 ## What is and for?
 
