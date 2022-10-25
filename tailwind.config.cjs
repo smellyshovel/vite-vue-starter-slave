@@ -1,10 +1,14 @@
-// for in-demo use only
+// one shared config for both the lib and the demo
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./demo/**/*.{vue,css}"],
+  content: ["./demo/index.html", "./src/**/*.{vue,css}", "./demo/**/*.{vue,css}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slave: "#9244ff",
+      },
+    },
   },
   plugins: [],
 };
