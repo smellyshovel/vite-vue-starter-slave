@@ -21,7 +21,7 @@ export default ({ mode }: { mode: string }) => {
     },
 
     optimizeDeps: {
-      // TODO: use the slave's actual name
+      // TODO: use the slave's actual name (from package.json)
       exclude: ["vite-vue-starter-slave"],
     },
 

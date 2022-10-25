@@ -26,6 +26,7 @@
     "vite-vue-starter-slave": "file:./",
     "vue": "^3.0.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/types": "^7.19.4",
     "@types/node": "^18.11.5",
