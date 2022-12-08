@@ -11,7 +11,12 @@ export default ({ mode }: { mode: string }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
-    plugins: [vue(), visualizer()],
+    plugins: [
+      vue(),
+      visualizer({
+        filename: "demo_stats.html",
+      }),
+    ],
 
     root: resolve(__dirname, "demo"),
 
