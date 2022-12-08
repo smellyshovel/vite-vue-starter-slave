@@ -12,7 +12,7 @@ dist
 demo/dist
 dist-ssr
 stats.html
-demo/stats.html
+demo_stats.html
 *.local
 
 # Editor directories and files
