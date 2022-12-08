@@ -38,9 +38,10 @@ Make the following changes in the cloned files (**4 files** in total):
 
   - Change the package `name` to "todo_ui"
   - In the `module` field, change the `"vite-vue-starter-slave"` part to `"todo_ui"`
-  - In the `env:prep` script, change the `"npm link vite-vue-starter-slave"` part to` "npm link todo_ui"`
+  - In the `env:prep` script, change the `"npm link vite-vue-starter-slave"` part to `"npm link todo_ui"`
   - In the `peerDependencies` section, change `"vite-vue-starter-slave": "file:./"` to `"todo_ui": "file:./"`
   - If there are other slave-libs for _this_ slave-lib, specify them in `dependencies`
+  - Duplicate all the necessary peer-deps in dev-deps for the demo app to work
 
 - `vite.lib.config.ts`, `vite.demo.config.ts` and `tailwind.config.cjs`
   - Address all the `TODO`s inside these files
