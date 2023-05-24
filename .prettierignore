@@ -11,9 +11,10 @@
 !*.json
 !*.md
 
-# But still ignore dist and demo/dist
+# But still ignore dist and demo/dist. And all the minified files
 dist/**
 demo/dist/**
+**/*.min.*
 
 # And the stats.html file (both lib's and demo's)
 stats.html
