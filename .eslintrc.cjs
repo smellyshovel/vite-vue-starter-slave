@@ -29,5 +29,5 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["off", { argsIgnorePattern: "^_" }],
     "prettier/prettier": ["warn", {}, { usePrettierrc: true }],
   },
-  ignorePatterns: ["node_modules", "dist", "demo/dist"],
+  ignorePatterns: ["node_modules", "dist", "demo/dist", "**/*.min.*"],
 };
