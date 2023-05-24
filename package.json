@@ -18,7 +18,7 @@
     "lint": "eslint --fix \"./src/**/*.{ts,js,cjs,vue,html}\""
   },
   "lint-staged": {
-    "./{src,demo}/**/*.{ts,js,cjs,vue}": [
+    "./{src,demo}/**/*.{ts,js,cjs,vue,html}": [
       "npm run lint"
     ]
   },
