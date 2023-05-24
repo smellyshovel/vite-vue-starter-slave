@@ -19,6 +19,7 @@ export default ({ mode }: { mode: string }) => {
     ],
 
     root: resolve(__dirname, "demo"),
+    base: process.env.BASE_URL,
 
     resolve: {
       // to be able to self-reference the lib in the demo

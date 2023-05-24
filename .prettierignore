@@ -1,24 +1,24 @@
 # Ignore everything recursively
 *
 
-# But not the .{ts,js,cjs,html,css,vue,json,md} files
+# But not the .{ts,js,cjs,vue,html,json,css,md} files
 !*.ts
 !*.js
 !*.cjs
-!*.html
-!*.css
 !*.vue
+!*.html
 !*.json
+!*.css
 !*.md
 
-# But still ignore dist and demo/dist. And all the minified files
+# But still ignore dist, demo/dist and all the minified files
 dist/**
 demo/dist/**
 **/*.min.*
 
 # And the stats.html file (both lib's and demo's)
 stats.html
-demo/stats.html
+demo_stats.html
 
 # Check subdirectories too
 !*/

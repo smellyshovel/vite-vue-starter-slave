@@ -9,12 +9,6 @@ module.exports = {
     // TODO: list all the slave libs below (using the same pattern)
     // "../vite-vue-starter-slave/src/**/*.{vue,css}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        slave: "#9244ff",
-      },
-    },
-  },
+  theme: {},
   plugins: [],
 };
